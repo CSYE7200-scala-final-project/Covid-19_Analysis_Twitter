@@ -1,0 +1,61 @@
+Get tweets --> Clean ---> Transform in Tabular ----> Sentimental analysis -----> ML(add tag) ----> Visualization
+
+
+
+Data Souce : Twitter
+
+Topic of Aanlysis :  Covid 19
+
+
+
+
+1 - Project title with team members (and team number)
+
+Analysis and Insights on COVID-19 (coronavirus) based on Twitter Tweets.
+
+
+2 - Use cases to be satisfied for hypothetical customers
+
+a.User specifies the filters(region, date range…) and receives graphs about Covid-19
+b.System runs data (machine learning) model and displays list of feature vectors, each with predicted label
+
+3  -Methodology (how/what do you propose to do)
+
+Data Ingestion : -                    Get the Tweets From Twitter related to COVID-19                            Technology Would be Apache Kafka
+Data Cleaning and Transformation : -  Cleaned and transformed data based on features needed for analysis         Technology would be Apache Spark   
+Data Analysis :-      Do sentimental analysis on our dataset and train a machine learning model to classify the tweets    Technology used would be Apache SparkML and DSL 
+Data Visualization :-   Weekly/Daily number of tweets, Based on Region , Based on sentiments                     Technology used would be Apache Zepplin
+
+
+4 - Data sources, enumerating the magnitude (primarily the # of rows) of the data that you will process;
+Apache Kakfa -  Min 2000 rows per day. We would start ingesting the data from next week. As this is a peak period.
+
+5 - Milestones/sprints (approximately one week to ten days between each)
+
+Our Sprint is one week Duration
+
+Sprint 1   - Setup Kafka Cluster and Get Tweets From Kafka.
+Sprint 2   - Build data cleaning part of Data Pipeline.  
+Sprint 3   - Analyze dataset with NLP algorithm and generate a new dataset for coming analysis.
+Sprint 4   - Sentimental analysis
+Sprint 5   - Setup Zepplin and implement dashboard/reports. 
+Sprint 6   - Prepare for presentation and solve any bugs we have.
+
+The language would be Scala.
+
+Github Repo :- https://github.com/adwaitasathe/Covid-19_Analysis_Twitter
+
+7 - Acceptance criteria (how will I know that you have achieved what you set out to do? -- see separate item)
+
+80% cases will be classified correctly for the machine learning models.
+Data pipeline should work correctly with any flaws.
+90% of the data ingested should be a part of Visualization Data.
+
+8 - Goals of the project (what do you expect to achieve and accomplish).
+
+We would to analyze the dataset to figure out how people think about the coronavirus and use machine learning models to add some tags like worried, not worried to tweets.
+
+From Technology Perspective, Learn Apache Kafka , Apache Spark and Zepplin.
+
+
+
